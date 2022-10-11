@@ -3,6 +3,7 @@
 //  TaskManager
 //
 //  Created by Orland Tompkins.
+// https://samsonc89.github.io/library/
 //
 
 import UIKit

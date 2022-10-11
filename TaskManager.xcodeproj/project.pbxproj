@@ -16,6 +16,7 @@
 		57ACF4DA28EC8AD0004F12C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57ACF4D828EC8AD0004F12C0 /* LaunchScreen.storyboard */; };
 		57ACF4E728EDC82B004F12C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ACF4E628EDC82B004F12C0 /* HomeViewController.swift */; };
 		57ACF4E928EDC83A004F12C0 /* MessageBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ACF4E828EDC83A004F12C0 /* MessageBoardViewController.swift */; };
+		57ACF4EC28EDD9BE004F12C0 /* MessageBoardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ACF4EB28EDD9BE004F12C0 /* MessageBoardTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		57ACF4DB28EC8AD0004F12C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57ACF4E628EDC82B004F12C0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		57ACF4E828EDC83A004F12C0 /* MessageBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoardViewController.swift; sourceTree = "<group>"; };
+		57ACF4EB28EDD9BE004F12C0 /* MessageBoardTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoardTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				57ACF4CE28EC8ACE004F12C0 /* LoginViewController.swift */,
 				57ACF4E628EDC82B004F12C0 /* HomeViewController.swift */,
 				57ACF4E828EDC83A004F12C0 /* MessageBoardViewController.swift */,
+				57ACF4EA28EDD98B004F12C0 /* Message Board Cell */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -114,6 +117,14 @@
 				57ACF4CC28EC8ACE004F12C0 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		57ACF4EA28EDD98B004F12C0 /* Message Board Cell */ = {
+			isa = PBXGroup;
+			children = (
+				57ACF4EB28EDD9BE004F12C0 /* MessageBoardTableCell.swift */,
+			);
+			path = "Message Board Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +204,7 @@
 				57ACF4D528EC8ACE004F12C0 /* TaskManager.xcdatamodeld in Sources */,
 				57ACF4E928EDC83A004F12C0 /* MessageBoardViewController.swift in Sources */,
 				57ACF4CD28EC8ACE004F12C0 /* SceneDelegate.swift in Sources */,
+				57ACF4EC28EDD9BE004F12C0 /* MessageBoardTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
