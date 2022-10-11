@@ -20,7 +20,7 @@ class MessageBoardViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("msgBrd: \(msgBoard.count)")
+        
     }
     
     // MARK: - Message Handler
