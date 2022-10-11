@@ -11,7 +11,7 @@ class MessageBoardViewController: UITableViewController {
     private enum Message {
         case text(userID: String, content: String, date: Date)
     }
-    private var msgBoard = [Message]()
+    private var messageBoard = [Message]()
     private lazy var timeConverter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:MM"
@@ -38,7 +38,7 @@ class MessageBoardViewController: UITableViewController {
             guard let msgTxtField = alert.textFields else { return }
             if let content = msgTxtField[0].text {
                 let newMsg = Message.text(userID: "USER", content: content, date: Date())
-                self.msgBoard.append(newMsg)
+                self.messageBoard.append(newMsg)
                 self.tableView.reloadData()
             }
         }))
@@ -47,7 +47,7 @@ class MessageBoardViewController: UITableViewController {
     
     // MARK: - TableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return msgBoard.count
+        return messageBoard.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,7 +60,7 @@ class MessageBoardViewController: UITableViewController {
     
     private func cellConfig(_ cell: MessageBoardTableCell, at indexPath: IndexPath) {
         // labels as associated values?
-        switch msgBoard[indexPath.row] {
+        switch messageBoard[indexPath.row] {
             case let .text(userID: id, content: content, date: date):
                 cell.messageLabel.text = content
                 cell.timeStampLabel.text = timeConverter.string(from: date)
